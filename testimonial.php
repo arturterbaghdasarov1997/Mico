@@ -36,7 +36,6 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <?php
     require "header.php";
-    require "slides-function.php";
     require "testimonial-function.php";
     require "subscribe-function.php";
     require "adress-section.php";
@@ -109,7 +108,6 @@
     </header>
     <!-- end header section -->
   </div>
-
 
 
   <!-- client section -->

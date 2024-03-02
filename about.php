@@ -42,6 +42,7 @@
     require "link-section.php";
     require "posts-news.php";
     require "footer-function.php";
+  ?>
 
 </head>
 
@@ -54,9 +55,9 @@
         <div class="container">
           <div class="contact_nav">
             <a href="">
-                <?php
-                  printContact($infos);
-                ?>
+              <?php
+                printContact($infos);
+              ?>
             </a>
           </div>
         </div>
@@ -145,8 +146,8 @@
                   <?php
                     printUsefulLinks($links);
                   ?>
-                  </div>
-                </div>
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">

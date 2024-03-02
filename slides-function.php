@@ -25,14 +25,17 @@
             'image' => 'images/slider-img.jpg'
         ),
     );
+
     function printSliderSection($slides) {
         echo '<div class="dot_design">
                     <img src="images/dots.png" alt="">
                 </div>
                 <div id="customCarousel1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">';
+    
         foreach ($slides as $index => $slide) {
             $activeClass = ($index == 0) ? ' active' : '';
+    
             echo '<div class="carousel-item' . $activeClass . '">
                     <div class="container ">
                         <div class="row">
@@ -61,11 +64,14 @@
                     </div>
                 </div>';
         }
+    
         echo '</div>';
     }
+
     $carouselId = "customCarousel1";
     $prevImageSrc = "images/prev.png";
     $nextImageSrc = "images/next.png";
+
     function printCarouselControls($carouselId, $prevImageSrc, $nextImageSrc) {
         echo '<div class="carousel_btn-box">
                 <a class="carousel-control-prev" href="#' . $carouselId . '" role="button" data-slide="prev">
